@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 600px;
+  padding: 1rem;
+  box-shadow: 30px 40px 80px gray;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-text {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.tasks-list {
+  padding: 0;
+}
+
+.tasks-list li {
+  list-style: none;
+  line-height: 0.5rem;
+}
+
+.clear-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
