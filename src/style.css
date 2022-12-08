@@ -34,7 +34,16 @@ body {
 
 .tasks-list li {
   list-style: none;
-  line-height: 0.5rem;
+  /* background-color: blue; */
+
+  /* line-height: 0.5rem; */
+}
+
+.listInput input
+{
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid blue;
 }
 
 .clear-btn {
