@@ -42,14 +42,13 @@ body {
   border-bottom: 2px solid gray;
 }
 
-.listInput input
-{
+.listInput input {
   width: 100%;
   font-size: 18px;
   padding: 0.8rem 0.4rem;
   border: none;
   background-color: transparent;
-  outline:none;
+  outline: none;
 }
 
 .clear-btn {
