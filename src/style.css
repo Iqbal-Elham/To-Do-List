@@ -34,7 +34,21 @@ body {
 
 .tasks-list li {
   list-style: none;
-  line-height: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0 1rem;
+  border-bottom: 2px solid gray;
+}
+
+.listInput input {
+  width: 100%;
+  font-size: 18px;
+  padding: 0.8rem 0.4rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .clear-btn {
