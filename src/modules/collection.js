@@ -16,6 +16,10 @@ export default class Collection {
     this.setLocalStorage(this.list);
   }
 
+  // updateIndex = (index) => {
+  //   for (let i = index; )
+  // }
+
   setLocalStorage = (li) => {
     localStorage.setItem('todo', JSON.stringify(li));
   };
