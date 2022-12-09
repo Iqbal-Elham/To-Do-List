@@ -1,8 +1,9 @@
 import ToDo from './todo.js';
 
 export default class Collection {
-  constructor() {
-    this.list = [];
+  constructor(localStorageItem, list) {
+    this.localStorageItem = localStorageItem;
+    this.list = list || [];
   }
 
   addTask = (description) => {

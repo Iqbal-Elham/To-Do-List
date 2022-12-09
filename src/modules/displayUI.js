@@ -2,7 +2,10 @@ import Collection from './collection.js';
 
 const tasksUI = document.getElementById('tasksUI');
 const clearAll = document.getElementById('clearAll');
-const col = new Collection();
+const col = new Collection(
+  'todo',
+  JSON.parse(localStorage.getItem('todo')) || [],
+);
 
 const listRender = (item) => {
   const data = Array.isArray(item) ? item.map(
