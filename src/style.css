@@ -35,14 +35,14 @@ body {
 .tasks-list li {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center;
   border-radius: 3px;
   padding: 0 1rem;
   border-bottom: 2px solid gray;
 }
 
-.listInput input {
+.listInput .desc {
   width: 100%;
   font-size: 18px;
   padding: 0.8rem 0.4rem;
@@ -59,4 +59,10 @@ body {
   border: none;
   cursor: pointer;
   font-size: 15px;
+}
+
+input:checked + input {
+  text-decoration: line-through;
+  color: #ccc;
+  font-style: italic;
 }

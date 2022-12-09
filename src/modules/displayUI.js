@@ -1,21 +1,40 @@
 import Collection from './collection.js';
 
 const tasksUI = document.getElementById('tasksUI');
+const clearAll = document.getElementById('clearAll');
 const col = new Collection();
 
 const listRender = (item) => {
   const data = Array.isArray(item) ? item.map(
     (n) => `
-  <li id="list" class="listInput"> <input id="${n.index}" type="text" value="${n.description}" readonly> 
+  <li id="list" class="listInput">
+  <input id="${n.index}" class="checkbox" type="checkbox" ${n.completed ? 'checked' : ''}>
+  <input id="${n.index}" class="desc" type="text" value="${n.description}" readonly> 
   <i id="btn-${n.index}" onclick="removeTodo(${n.index})" class="fa-regular fa-trash-can fa-lg"></i></li>`,
   ) : [];
   tasksUI.innerHTML = data.join('');
   tasksUI.addEventListener('dblclick', (e) => {
     e.target.removeAttribute('readonly');
     e.target.parentElement.style = 'background-color:rgb(233, 210, 168)';
-    e.preventDefault();
   });
 };
+
+clearAll.addEventListener('click', () => {
+  col.removeAllCompleted();
+  listRender(col.allTodo());
+});
+
+tasksUI.addEventListener('change', (e) => {
+  if (e.target.matches('.checkbox')) {
+    let value = false;
+    e.target.nextElementSibling.style = 'text-decoration-line: none;';
+    if (e.target.checked) {
+      value = true;
+      e.target.nextElementSibling.style = 'text-decoration-line: line-through;';
+    }
+    col.updateCheck(e.target.id, value);
+  }
+});
 
 tasksUI.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
@@ -25,7 +44,6 @@ tasksUI.addEventListener('keypress', (e) => {
     e.target.setAttribute('readonly', 'readonly');
     e.target.parentElement.style = 'background-color:white';
     col.setLocalStorage(col.allTodo());
-    e.preventDefault();
   }
 });
 
@@ -36,7 +54,6 @@ tasksUI.addEventListener('focusout', (e) => {
   e.target.setAttribute('readonly', 'readonly');
   e.target.parentElement.style = 'background-color:white';
   col.setLocalStorage(col.allTodo());
-  e.preventDefault();
 });
 
 const addTaskForm = document.getElementById('addTaskForm');
