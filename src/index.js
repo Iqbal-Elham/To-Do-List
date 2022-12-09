@@ -1,8 +1,8 @@
 import './style.css';
-import LR from './modules/displayUI.js';
+import listRender from './modules/displayUI.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('todo')) {
-    LR(JSON.parse(localStorage.todo));
+    listRender(JSON.parse(localStorage.todo));
   }
 });

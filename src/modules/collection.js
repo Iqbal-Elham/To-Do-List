@@ -17,8 +17,8 @@ export default class Collection {
     this.setLocalStorage(this.list);
   }
 
-  setLocalStorage = (li) => {
-    localStorage.setItem('todo', JSON.stringify(li));
+  setLocalStorage = (value) => {
+    localStorage.setItem('todo', JSON.stringify(value));
   };
 
   resetIndex() {
@@ -33,14 +33,13 @@ export default class Collection {
     this.setLocalStorage(this.list);
   }
 
-  updateCheck = (index, value) => {
-    this.list[index].completed = value;
+  updateCheck = (index, val) => {
+    this.list[index].completed = val;
     this.setLocalStorage(this.list);
   }
 
   removeAllCompleted = () => {
     this.list = this.list.filter((todo) => todo.completed === false);
-    // this.items.sort((a, b) => a.index - b.index);
     this.resetIndex();
     this.setLocalStorage(this.list);
   }

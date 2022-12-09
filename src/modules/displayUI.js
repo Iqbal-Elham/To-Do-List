@@ -8,7 +8,7 @@ const listRender = (item) => {
   const data = Array.isArray(item) ? item.map(
     (n) => `
   <li id="list" class="listInput">
-  <input id="${n.index}" class="checkbox" type="checkbox" ${n.completed ? 'checked' : ''}>
+  <input id="${n.index}" class="checkbox" type="checkbox" ${n.completed ? 'checked' : ''} value="${n.description}">
   <input id="${n.index}" class="desc" type="text" value="${n.description}" readonly> 
   <i id="btn-${n.index}" onclick="removeTodo(${n.index})" class="fa-regular fa-trash-can fa-lg"></i></li>`,
   ) : [];
@@ -25,14 +25,10 @@ clearAll.addEventListener('click', () => {
 });
 
 tasksUI.addEventListener('change', (e) => {
+  let val = false;
   if (e.target.matches('.checkbox')) {
-    let value = false;
-    e.target.nextElementSibling.style = 'text-decoration-line: none;';
-    if (e.target.checked) {
-      value = true;
-      e.target.nextElementSibling.style = 'text-decoration-line: line-through;';
-    }
-    col.updateCheck(e.target.id, value);
+    if (e.target.checked) val = true;
+    col.updateCheck(e.target.id, val);
   }
 });
 
@@ -70,4 +66,5 @@ window.removeTodo = (index) => {
   col.removeTask(index);
   listRender(col.allTodo());
 };
+
 export default listRender;
