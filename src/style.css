@@ -35,7 +35,7 @@ body {
 .tasks-list li {
   list-style: none;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 3px;
   padding: 0 1rem;
