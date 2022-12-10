@@ -11,11 +11,11 @@
     <div class="container">
         <header><p class="header-text">Today's To Do</p></header>
         <form id="addTaskForm">
-            <input id="addTaskInput" type="text" class="add-text" placeholder="Add to your list...">
+            <input id="addTaskInput" type="text" class="add-text" placeholder="Add to your list..." required>
             <button type="submit" hidden></button>
         </form>
         <ul id="tasksUI" class="tasks-list"></ul>
-        <button type="button" class="clear-btn">Clear all completed</button>
+        <button id="clearAll" type="button" class="clear-btn">Clear all completed</button>
     </div>
     
 </body>

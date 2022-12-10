@@ -1,8 +1,9 @@
 import ToDo from './todo.js';
 
 export default class Collection {
-  constructor() {
-    this.list = [];
+  constructor(localStorageItem, list) {
+    this.localStorageItem = localStorageItem;
+    this.list = list || [];
   }
 
   addTask = (description) => {
@@ -13,20 +14,35 @@ export default class Collection {
 
   removeTask = (index) => {
     this.list = this.list.filter((todo) => todo.index !== index);
+    this.resetIndex();
     this.setLocalStorage(this.list);
   }
 
-  // updateIndex = (index) => {
-  //   for (let i = index; )
-  // }
-
-  setLocalStorage = (li) => {
-    localStorage.setItem('todo', JSON.stringify(li));
+  setLocalStorage = (value) => {
+    localStorage.setItem('todo', JSON.stringify(value));
   };
+
+  resetIndex() {
+    this.list.forEach((todo, index) => {
+      todo.index = index;
+    });
+    this.setLocalStorage();
+  }
 
   updateTask = (editValue, index) => {
     this.list[index].description = editValue;
-    return this.list;
+    this.setLocalStorage(this.list);
+  }
+
+  updateCheck = (index, val) => {
+    this.list[index].completed = val;
+    this.setLocalStorage(this.list);
+  }
+
+  removeAllCompleted = () => {
+    this.list = this.list.filter((todo) => todo.completed === false);
+    this.resetIndex();
+    this.setLocalStorage(this.list);
   }
 
   allTodo = () => this.list;
