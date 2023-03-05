@@ -69,7 +69,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://iqbal-elham.github.io/To-Do-List/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,9 +91,9 @@ and follow these steps.
 Clone this repository to your desired folder:
 
 1. Download the **Zip** file or clone the repo with:
-```bash git clone https://github.com/Iqbal-Elham/personal_portfolio.git ``` 
+```bash git clone https://github.com/Iqbal-Elham/To-Do-List.git ``` 
 2. To access cloned directory run: 
-```bash cd Hello_micorverse ``` 
+```bash cd To-Do-List ``` 
 3. Open it with the live server 
 
 ### Install
@@ -160,7 +160,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +170,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+A great thanks to Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
