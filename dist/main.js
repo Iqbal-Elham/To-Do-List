@@ -1,3 +1,4 @@
+"use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -6,9 +7,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+(self["webpackChunkstarting_webpack"] = self["webpackChunkstarting_webpack"] || []).push([["main"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -16,7 +15,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body{\\n    background-color: red;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://starting-webpack/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html,\\r\\nbody {\\r\\n  height: 100%;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.container {\\r\\n  border: 1px solid gray;\\r\\n  border-radius: 10px;\\r\\n  width: 800px;\\r\\n  padding: 1rem;\\r\\n  box-shadow: 30px 40px 80px gray;\\r\\n}\\r\\n\\r\\n.header-text {\\r\\n  font-size: 20px;\\r\\n  font-weight: bold;\\r\\n}\\r\\n\\r\\n.add-text {\\r\\n  border: none;\\r\\n  border-bottom: 1px solid gray;\\r\\n  width: 100%;\\r\\n  height: 40px;\\r\\n  font-size: 16px;\\r\\n}\\r\\n\\r\\n.tasks-list {\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\n.tasks-list li {\\r\\n  list-style: none;\\r\\n  display: flex;\\r\\n  justify-content: flex-start;\\r\\n  align-items: center;\\r\\n  border-radius: 3px;\\r\\n  padding: 0 1rem;\\r\\n  border-bottom: 2px solid gray;\\r\\n}\\r\\n\\r\\n.listInput .desc {\\r\\n  width: 100%;\\r\\n  font-size: 18px;\\r\\n  padding: 0.8rem 0.4rem;\\r\\n  border: none;\\r\\n  background-color: transparent;\\r\\n  outline: none;\\r\\n}\\r\\n\\r\\n.clear-btn {\\r\\n  display: block;\\r\\n  text-align: center;\\r\\n  width: 100%;\\r\\n  padding: 1rem 1.5rem;\\r\\n  border: none;\\r\\n  cursor: pointer;\\r\\n  font-size: 15px;\\r\\n}\\r\\n\\r\\ninput:checked + input {\\r\\n  text-decoration: line-through;\\r\\n  color: #ccc;\\r\\n  font-style: italic;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://starting-webpack/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,88 +115,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://starting-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_displayUI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/displayUI.js */ \"./src/modules/displayUI.js\");\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n  if (localStorage.getItem('todo')) {\r\n    (0,_modules_displayUI_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(JSON.parse(localStorage.todo));\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack://starting-webpack/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/collection.js":
+/*!***********************************!*\
+  !*** ./src/modules/collection.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Collection)\n/* harmony export */ });\n/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo.js */ \"./src/modules/todo.js\");\n\r\n\r\nclass Collection {\r\n  constructor(localStorageItem, list) {\r\n    this.localStorageItem = localStorageItem;\r\n    this.list = list || [];\r\n  }\r\n\r\n  addTask = (description) => {\r\n    const todo = new _todo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](description, false, this.list.length);\r\n    this.list.push(todo);\r\n    this.setLocalStorage(this.list);\r\n  }\r\n\r\n  removeTask = (index) => {\r\n    this.list = this.list.filter((todo) => todo.index !== index);\r\n    this.resetIndex();\r\n    this.setLocalStorage(this.list);\r\n  }\r\n\r\n  setLocalStorage = (value) => {\r\n    localStorage.setItem('todo', JSON.stringify(value));\r\n  };\r\n\r\n  resetIndex() {\r\n    this.list.forEach((todo, index) => {\r\n      todo.index = index;\r\n    });\r\n    this.setLocalStorage();\r\n  }\r\n\r\n  updateTask = (editValue, index) => {\r\n    this.list[index].description = editValue;\r\n    this.setLocalStorage(this.list);\r\n  }\r\n\r\n  updateCheck = (index, val) => {\r\n    this.list[index].completed = val;\r\n    this.setLocalStorage(this.list);\r\n  }\r\n\r\n  removeAllCompleted = () => {\r\n    this.list = this.list.filter((todo) => todo.completed === false);\r\n    this.resetIndex();\r\n    this.setLocalStorage(this.list);\r\n  }\r\n\r\n  allTodo = () => this.list;\r\n}\r\n\n\n//# sourceURL=webpack://starting-webpack/./src/modules/collection.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayUI.js":
+/*!**********************************!*\
+  !*** ./src/modules/displayUI.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _collection_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./collection.js */ \"./src/modules/collection.js\");\n\r\n\r\nconst tasksUI = document.getElementById('tasksUI');\r\nconst clearAll = document.getElementById('clearAll');\r\nconst col = new _collection_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\r\n  'todo',\r\n  JSON.parse(localStorage.getItem('todo')) || [],\r\n);\r\n\r\nconst listRender = (item) => {\r\n  const data = Array.isArray(item) ? item.map(\r\n    (n) => `\r\n  <li id=\"list\" class=\"listInput\">\r\n  <input id=\"${n.index}\" class=\"checkbox\" type=\"checkbox\" ${n.completed ? 'checked' : ''} value=\"${n.description}\">\r\n  <input id=\"${n.index}\" class=\"desc\" type=\"text\" value=\"${n.description}\" readonly> \r\n  <i id=\"btn-${n.index}\" onclick=\"removeTodo(${n.index})\" class=\"fa-regular fa-trash-can fa-lg\"></i></li>`,\r\n  ) : [];\r\n  tasksUI.innerHTML = data.join('');\r\n  tasksUI.addEventListener('dblclick', (e) => {\r\n    e.target.removeAttribute('readonly');\r\n    e.target.parentElement.style = 'background-color:rgb(233, 210, 168)';\r\n  });\r\n};\r\n\r\nclearAll.addEventListener('click', () => {\r\n  col.removeAllCompleted();\r\n  listRender(col.allTodo());\r\n});\r\n\r\ntasksUI.addEventListener('change', (e) => {\r\n  let val = false;\r\n  if (e.target.matches('.checkbox')) {\r\n    if (e.target.checked) val = true;\r\n    col.updateCheck(e.target.id, val);\r\n  }\r\n});\r\n\r\ntasksUI.addEventListener('keypress', (e) => {\r\n  if (e.key === 'Enter') {\r\n    const editValue = e.target.value;\r\n    const index = e.target.id;\r\n    col.updateTask(editValue, index);\r\n    e.target.setAttribute('readonly', 'readonly');\r\n    e.target.parentElement.style = 'background-color:white';\r\n    col.setLocalStorage(col.allTodo());\r\n  }\r\n});\r\n\r\ntasksUI.addEventListener('focusout', (e) => {\r\n  const editValue = e.target.value;\r\n  const index = e.target.id;\r\n  col.updateTask(editValue, index);\r\n  e.target.setAttribute('readonly', 'readonly');\r\n  e.target.parentElement.style = 'background-color:white';\r\n  col.setLocalStorage(col.allTodo());\r\n});\r\n\r\nconst addTaskForm = document.getElementById('addTaskForm');\r\nconst addTaskInp = document.getElementById('addTaskInput');\r\n\r\naddTaskForm.addEventListener('submit', (event) => {\r\n  event.preventDefault();\r\n  col.addTask(addTaskInp.value);\r\n  addTaskInp.value = '';\r\n  listRender(col.allTodo());\r\n});\r\n\r\nwindow.removeTodo = (index) => {\r\n  col.removeTask(index);\r\n  listRender(col.allTodo());\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listRender);\n\n//# sourceURL=webpack://starting-webpack/./src/modules/displayUI.js?");
+
+/***/ }),
+
+/***/ "./src/modules/todo.js":
+/*!*****************************!*\
+  !*** ./src/modules/todo.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ToDo)\n/* harmony export */ });\nclass ToDo {\r\n  constructor(description, completed, index) {\r\n    this.description = description;\r\n    this.completed = completed;\r\n    this.index = index;\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack://starting-webpack/./src/modules/todo.js?");
 
 /***/ })
 
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
-/******/ })()
-;
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
+/******/ }
+]);
